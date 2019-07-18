@@ -1,0 +1,19 @@
+{
+  "name": "js_for_ds",
+  "version": "1.0.0",
+  "description": "javascript for data science",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "data",
+    "science"
+  ],
+  "author": "lintangwisesa",
+  "license": "ISC",
+  "dependencies": {
+    "dstools": "^0.2.8"
+  }
+}
