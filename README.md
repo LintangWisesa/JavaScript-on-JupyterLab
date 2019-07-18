@@ -51,7 +51,28 @@
     $ jupyter lab 
     ```
     
-    It will run at http://localhost:8888/lab, and now you can use __JavaScript (Node.js)__ kernel on Jupyter Notebook. Enjoy~ 😎
+    It will run at http://localhost:8888/lab, and now you can use __JavaScript (Node.js)__ kernel on Jupyter Notebook. You can use [__dstools__](https://www.npmjs.com/package/dstools) package to do some data analytics like __pandas__ does with Python.
+
+#
+
+4. Do some data analytics with __dstools__, install it from npm:
+
+    ```bash
+    $ npm i dstools
+    ```
+
+    Create dummy csv data then load it on Jupyter Lab:
+
+    ```javascript
+    const dstools = require('dstools')
+    const Collection = dstools.Collection;
+    const data = Collection().loadCSV('data.csv')
+
+    data.show()
+    data.head(2).show()
+    ```
+
+    Enjoy ~ 😎
 
 #
 
